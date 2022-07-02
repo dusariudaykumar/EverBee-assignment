@@ -1,5 +1,20 @@
 # EverBee-assignment
 
+
+## features :
+ - Table with product details
+ - Copy to clipboard on onclick on the tags column
+ - search bar
+ - sorting on price
+ - paginaton
+ - graph
+
+
+## Tech stack : 
+ - React js
+ - Material-UI
+ 
+ 
 ## Livelink : https://everbee-assignment.netlify.app/
 
 ## Preview :
