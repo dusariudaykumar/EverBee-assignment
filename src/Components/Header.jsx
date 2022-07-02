@@ -1,4 +1,4 @@
-import { Box, ButtonGroup, IconButton, Typography } from "@mui/material";
+import { Badge, Box, ButtonGroup, IconButton, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
@@ -40,46 +40,56 @@ const Header = () => {
       </Box>
 
       <ButtonGroup className={classes.btnContainer} color="white">
-        <IconButton
-          style={{
-            outline: "1px solid white",
-            borderRadius: "4px",
-            height: "2.5rem",
-          }}>
-          <CalendarTodayOutlinedIcon color="secondary" />
-        </IconButton>
-        <IconButton
-          style={{
-            outline: "1px solid white",
-            borderRadius: "4px",
-            height: "2.5rem",
-          }}>
-          <FactCheckOutlinedIcon color="secondary" />
-        </IconButton>
-        <IconButton
-          style={{
-            outline: "1px solid white",
-            borderRadius: "4px",
-            height: "2.5rem",
-          }}>
-          <ConstructionOutlinedIcon color="secondary" />
-        </IconButton>
-        <IconButton
-          style={{
-            outline: "1px solid white",
-            borderRadius: "4px",
-            height: "2.5rem",
-          }}>
-          <DarkModeOutlinedIcon color="secondary" />
-        </IconButton>
-        <IconButton
-          style={{
-            outline: "1px solid white",
-            borderRadius: "4px",
-            height: "2.5rem",
-          }}>
-          <NotificationsNoneOutlinedIcon color="secondary" />
-        </IconButton>
+        <Badge variant="dot" color="error">
+          <IconButton
+            style={{
+              outline: "1px solid white",
+              borderRadius: "4px",
+              height: "2.5rem",
+            }}>
+            <CalendarTodayOutlinedIcon color="secondary" />
+          </IconButton>
+        </Badge>
+        <Badge variant="dot" color="error">
+          <IconButton
+            style={{
+              outline: "1px solid white",
+              borderRadius: "4px",
+              height: "2.5rem",
+            }}>
+            <FactCheckOutlinedIcon color="secondary" />
+          </IconButton>
+        </Badge>
+        <Badge variant="dot" color="error">
+          <IconButton
+            style={{
+              outline: "1px solid white",
+              borderRadius: "4px",
+              height: "2.5rem",
+            }}>
+            <ConstructionOutlinedIcon color="secondary" />
+          </IconButton>
+        </Badge>
+        <Badge variant="dot" color="error">
+          <IconButton
+            style={{
+              outline: "1px solid white",
+              borderRadius: "4px",
+              height: "2.5rem",
+            }}>
+            <DarkModeOutlinedIcon color="secondary" />
+          </IconButton>
+        </Badge>
+        <Badge variant="dot" color="error">
+          <IconButton
+            style={{
+              outline: "1px solid white",
+              borderRadius: "4px",
+              height: "2.5rem",
+            }}>
+            <NotificationsNoneOutlinedIcon color="secondary" />
+          </IconButton>
+        </Badge>
       </ButtonGroup>
     </Box>
   );

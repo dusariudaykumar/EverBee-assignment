@@ -135,7 +135,7 @@ const TableComponent = ({ dataList, loading }) => {
                       }}>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -143,7 +143,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -151,7 +151,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -159,7 +159,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -167,7 +167,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -175,7 +175,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                         }}>
@@ -183,7 +183,7 @@ const TableComponent = ({ dataList, loading }) => {
                       </TableCell>
                       <TableCell
                         style={{
-                          fontSize: "1rem",
+                          fontSize: "14px",
                           fontWeight: "500",
                           fontFamily: "Poppins",
                           cursor: "pointer",
@@ -194,13 +194,17 @@ const TableComponent = ({ dataList, loading }) => {
                     </TableRow>
                   ))
                 ) : (
-                  <Typography
-                    textAlign="center"
-                    variant="h6"
-                    fontWeight="500"
-                    fontFamily="Poppins">
-                    No products found.Search for something else!
-                  </Typography>
+                  <TableRow>
+                    <TableCell>
+                      <Typography
+                        textAlign="center"
+                        variant="h6"
+                        fontWeight="500"
+                        fontFamily="Poppins">
+                        No products found.Search for something else!
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
                 )}
               </TableBody>
             </Table>

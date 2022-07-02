@@ -20,7 +20,7 @@ const CardItem = ({ cardInfo }) => {
             height: "100%",
             flexDirection: "column",
             justifyContent: "space-evenly",
-            padding: "1.4rem",
+            padding: "1rem",
             gap: "1rem",
           }}>
           <Icon sx={{ mt: "5px" }}>
@@ -31,7 +31,10 @@ const CardItem = ({ cardInfo }) => {
             variant="h6"
             lineHeight={1}
             fontFamily="Poppins"
-            fontWeight={600}>
+            fontWeight={600}
+            sx={{
+              color: "#707070",
+            }}>
             {title}
           </Typography>
           <div>
@@ -44,7 +47,7 @@ const CardItem = ({ cardInfo }) => {
             </Typography>
             <Typography
               variant="body"
-              fontSize="1rem"
+              fontSize="12px"
               fontFamily="Poppins"
               fontWeight={500}>
               {subText}
