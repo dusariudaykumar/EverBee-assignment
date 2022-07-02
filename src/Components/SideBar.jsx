@@ -34,7 +34,6 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
-    paddingLeft: "5px",
   },
   avatarBtnContainer: {
     display: "flex",
