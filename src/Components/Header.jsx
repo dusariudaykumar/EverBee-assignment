@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     width: "100%",
-    padding: "4rem",
+    padding: "3rem",
   },
   btnContainer: {
     display: "flex",
@@ -26,11 +26,12 @@ const Header = () => {
     <Box className={classes.headerContainer}>
       <Box>
         <Typography
-          variant="h5"
+          variant="h6"
           component="div"
           fontFamily="Poppins"
           fontWeight={500}
-          color="secondary">
+          color="secondary"
+          gutterBottom>
           Good Morning, Cody
         </Typography>
         <Typography variant="subtitle" fontFamily="Poppins" color="secondary">
