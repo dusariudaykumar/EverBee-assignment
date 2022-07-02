@@ -34,6 +34,7 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
+    paddingLeft: "5px",
   },
   avatarBtnContainer: {
     display: "flex",
@@ -54,6 +55,7 @@ const SideBar = () => {
           elevation={3}
           sx={{
             borderRadius: "10px",
+            width: "100%",
           }}>
           <Button className={classes.avatarBtnContainer}>
             <Box
@@ -83,7 +85,7 @@ const SideBar = () => {
               </ListItemIcon>
               <ListItemText
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
                 primary="Dashboard"
@@ -97,7 +99,7 @@ const SideBar = () => {
               <ListItemText
                 primary="My Shop"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -115,7 +117,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Research Tools"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -133,7 +135,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Wishlist"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -146,7 +148,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Trademark Analyzer"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -159,7 +161,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Affiliate Program"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -172,7 +174,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Upgrade"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -185,7 +187,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Support"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -198,7 +200,7 @@ const SideBar = () => {
               <ListItemText
                 primary="Send Feedback"
                 primaryTypographyProps={{
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontFamily: "Poppins",
                 }}
               />
@@ -214,6 +216,7 @@ const SideBar = () => {
             gap: "10px",
             alignItems: "center",
             marginRight: "auto",
+            paddingLeft: "10px",
           }}>
           <Avatar src={userAvatar} />
           <div

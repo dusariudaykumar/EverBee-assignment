@@ -19,10 +19,10 @@ function App() {
       <Toaster position="top-right" reverseOrder={true} />
       <Box>
         <Grid className={classes.gridContainer} container columns={12}>
-          <Grid item xs={3}>
+          <Grid item xs={2}>
             <SideBar />
           </Grid>
-          <Grid item xs={9}>
+          <Grid item xs={10}>
             <DashBoardPage />
           </Grid>
         </Grid>

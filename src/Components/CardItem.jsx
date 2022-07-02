@@ -27,7 +27,7 @@ const CardItem = ({ cardInfo }) => {
             <img src={img} alt={img} width="100%" height="100%" />
           </Icon>
           <Typography
-            fontSize="1.2rem"
+            fontSize="1rem"
             variant="h6"
             lineHeight={1}
             fontFamily="Poppins"
@@ -36,14 +36,17 @@ const CardItem = ({ cardInfo }) => {
           </Typography>
           <div>
             <Typography
-              fontSize="1.2rem"
-              variant="h6"
-              component="p"
+              fontSize="1rem"
+              variant="subtitle1"
               fontFamily="Poppins"
               fontWeight={500}>
               {money}
             </Typography>
-            <Typography fontSize="1rem" fontFamily="Poppins" fontWeight={500}>
+            <Typography
+              variant="body"
+              fontSize="1rem"
+              fontFamily="Poppins"
+              fontWeight={500}>
               {subText}
             </Typography>
           </div>
