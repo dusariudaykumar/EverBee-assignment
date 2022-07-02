@@ -7,9 +7,8 @@ const CardItem = ({ cardInfo }) => {
     <Paper
       elevation={4}
       sx={{
-        minWidth: "5rem",
-        width: "230px",
-        height: "200px",
+        width: "20rem",
+        height: "13rem",
         borderRadius: "1.5rem",
         cursor: "pointer",
       }}>
