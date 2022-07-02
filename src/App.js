@@ -1,7 +1,34 @@
+import { Box, Grid } from "@mui/material";
 import "./App.css";
+import { makeStyles } from "@mui/styles";
+import { SideBar } from "./Components";
+import DashBoardPage from "./Pages/DashBoardPage";
+import { Toaster } from "react-hot-toast";
 
+const useStyles = makeStyles((theme) => ({
+  gridContainer: {
+    alignItems: "flex-start",
+    width: "100%",
+  },
+}));
 function App() {
-  return <div className="App"></div>;
+  const classes = useStyles();
+
+  return (
+    <div className="App">
+      <Toaster position="top-right" reverseOrder={true} />
+      <Box>
+        <Grid className={classes.gridContainer} container columns={12}>
+          <Grid item xs={2}>
+            <SideBar />
+          </Grid>
+          <Grid item xs={10}>
+            <DashBoardPage />
+          </Grid>
+        </Grid>
+      </Box>
+    </div>
+  );
 }
 
 export default App;
