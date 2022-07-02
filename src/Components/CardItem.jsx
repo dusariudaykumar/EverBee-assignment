@@ -7,8 +7,8 @@ const CardItem = ({ cardInfo }) => {
     <Paper
       elevation={4}
       sx={{
-        width: "20rem",
-        height: "13rem",
+        width: "16rem",
+        height: "11rem",
         borderRadius: "1.5rem",
         cursor: "pointer",
       }}>
@@ -23,10 +23,10 @@ const CardItem = ({ cardInfo }) => {
             padding: "1.4rem",
             gap: "1rem",
           }}>
-          <Icon>
+          <Icon sx={{ mt: "5px" }}>
             <img src={img} alt={img} width="100%" height="100%" />
           </Icon>
-          <Typography variant="h5" fontFamily="Poppins" fontWeight={600}>
+          <Typography variant="h6" fontFamily="Poppins" fontWeight={600}>
             {title}
           </Typography>
           <div>
