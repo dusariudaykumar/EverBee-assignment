@@ -1,6 +1,6 @@
 import React from "react";
 import { CardContent, Card, Typography, Icon, Paper } from "@mui/material";
-import moneyIcon from "../Assert/Gross.png";
+
 const CardItem = ({ cardInfo }) => {
   const { img, title, money, subText } = cardInfo;
   return (
